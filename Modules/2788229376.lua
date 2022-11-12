@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ln3242/Dahood/main/GuiLibrary.lua')))()
 local Window = OrionLib:MakeWindow({Name = "DA HOOD OrionTest", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
@@ -12,6 +12,12 @@ local FunnyTap = Window:MakeTab({
 FunnyTap:AddButton({
 	Name = "Anit Bag",
 	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Anit Bag",
+            Content = "You can not turn this off",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
         local LP = game.Players.LocalPlayer;
 
         for i,v in ipairs(LP.Character:GetDescendants()) do
@@ -35,6 +41,12 @@ FunnyTap:AddButton({
 if not game.IsLoaded(game) then 
     game.Loaded.Wait(game.Loaded);
 end 
+OrionLib:MakeNotification({
+    Name = "nojumpcooldown",
+    Content = "You can not turn this off",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
 local IsA = game.IsA;
 local newindex = nil 
 newindex = hookmetamethod(game, "__newindex", function(self, Index, Value)
