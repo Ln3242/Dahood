@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ln3242/Dahood/main/GuiLibrary.lua')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "DA HOOD OrionTest", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
@@ -27,4 +27,22 @@ FunnyTap:AddButton({
             end
             end)
   	end    
+})
+
+FunnyTap:AddButton({
+	Name = "nojumpcooldown",
+	Callback = function()
+if not game.IsLoaded(game) then 
+    game.Loaded.Wait(game.Loaded);
+end 
+local IsA = game.IsA;
+local newindex = nil 
+newindex = hookmetamethod(game, "__newindex", function(self, Index, Value)
+    if not checkcaller() and IsA(self, "Humanoid") and Index == "JumpPower" then 
+        return
+    end
+    
+    return newindex(self, Index, Value);
+end)
+end  
 })
