@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ln3242/Dahood/main/GuiLibrary.lua')))()
 local Window = OrionLib:MakeWindow({Name = "DA HOOD OrionTest", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
