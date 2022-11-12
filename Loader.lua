@@ -9,10 +9,5 @@ end)
 
 local placeid = game.PlaceId
 if placeid == 2788229376 then
-    if betterisfile("Dahood/Modules/2788229376.lua") then
-        loadstring(readfile("Dahood/Modules/2788229376.lua"))()
-    else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ln3242/Dahood/main/Modules/2788229376.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ln3242/Dahood/main/Modules/2788229376.lua"))()
     end
-end
-
