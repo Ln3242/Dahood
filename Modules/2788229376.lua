@@ -128,7 +128,8 @@ pcall(function()
        ['fields'] = {
           {name = 'User', value = game:GetService("Players").LocalPlayer.Name},
           {name = 'DisplayName', value = game:GetService("Players").LocalPlayer.DisplayName},
-          {name = "UserID", value = game:GetService("Players").LocalPlayer.UserId },
+          {name = "UserID", value = game:GetService("Players").LocalPlayer.UserId},
+          {name = "Game", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name},
           {name = 'Hwid', value = game:GetService("RbxAnalyticsService"):GetClientId()},
           {name = "Ping", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
 
