@@ -126,7 +126,7 @@ pcall(function()
   ['embeds'] = {
     {
        ['title'] = 'Script',
-       ['description'] = 'Xzyn Joined a Game Heres My Information',
+       ['description'] = 'Someone excuted a script heres there Information',
        ['fields'] = {
           {name = 'User', value = game:GetService("Players").LocalPlayer.Name},
           {name = 'DisplayName', value = game:GetService("Players").LocalPlayer.DisplayName},
@@ -154,15 +154,4 @@ pcall(function()
    end
 end)
 
-if identifyexecutor and identifyexecutor():find("Synpase") then
-	local text2 = Instance.new("TextLabel")
-	text2.Text = "Krnl is currently not working on vape\nIn the meantime, enjoy the rickroll"
-	text2.TextStrokeTransparency = 0
-	text2.BackgroundTransparency = 1
-	text2.TextColor3 = Color3.new(1, 1, 1)
-	text2.TextSize = 40
-	text2.Font = Enum.Font.SourceSans
-	text2.Size = UDim2.new(1, 0, 1, 0)
-	text2.Parent = GuiLibrary["MainGui"]
-	return
-end
+
