@@ -411,6 +411,3 @@ if game.PlaceId == 2788229376 then
     AnimationPack(game.Players.LocalPlayer.Character)
     game.Players.LocalPlayer.CharacterAdded:Connect(AnimationPack)
 end
-end
-
-
